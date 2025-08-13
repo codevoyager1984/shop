@@ -1,0 +1,710 @@
+[
+  {
+    "name": "商品管理",
+    "router": null,
+    "perms": null,
+    "type": 0,
+    "icon": "icon-goods",
+    "orderNum": 1,
+    "viewPath": null,
+    "keepAlive": true,
+    "isShow": true,
+    "childMenus": [
+      {
+        "name": "商品列表",
+        "router": "/goods/info",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-menu",
+        "orderNum": 1,
+        "viewPath": "modules/goods/views/info.vue",
+        "keepAlive": true,
+        "isShow": true,
+        "childMenus": [
+          {
+            "name": "删除",
+            "router": null,
+            "perms": "goods:info:delete",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "修改",
+            "router": null,
+            "perms": "goods:info:update,goods:info:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "单个信息",
+            "router": null,
+            "perms": "goods:info:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "列表查询",
+            "router": null,
+            "perms": "goods:info:list",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "分页查询",
+            "router": null,
+            "perms": "goods:info:page",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "新增",
+            "router": null,
+            "perms": "goods:info:add",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          }
+        ]
+      },
+      {
+        "name": "分类列表",
+        "router": "/goods/type",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-component",
+        "orderNum": 2,
+        "viewPath": "modules/goods/views/type.vue",
+        "keepAlive": true,
+        "isShow": true,
+        "childMenus": [
+          {
+            "name": "删除",
+            "router": null,
+            "perms": "goods:type:delete",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "修改",
+            "router": null,
+            "perms": "goods:type:update,goods:type:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "单个信息",
+            "router": null,
+            "perms": "goods:type:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "列表查询",
+            "router": null,
+            "perms": "goods:type:list",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "分页查询",
+            "router": null,
+            "perms": "goods:type:page",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "新增",
+            "router": null,
+            "perms": "goods:type:add",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          }
+        ]
+      },
+      {
+        "name": "评论列表",
+        "router": "/goods/comment",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-message",
+        "orderNum": 3,
+        "viewPath": "modules/goods/views/comment.vue",
+        "keepAlive": false,
+        "isShow": false,
+        "childMenus": [
+          {
+            "name": "分页查询",
+            "router": null,
+            "perms": "goods:comment:page",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          }
+        ]
+      },
+      {
+        "name": "搜索关键词",
+        "router": "/goods/search-keyword",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-hot",
+        "orderNum": 4,
+        "viewPath": "modules/goods/views/search-keyword.vue",
+        "keepAlive": true,
+        "isShow": true,
+        "childMenus": [
+          {
+            "name": "删除",
+            "router": null,
+            "perms": "goods:searchKeyword:delete",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "修改",
+            "router": null,
+            "perms": "goods:searchKeyword:update,goods:searchKeyword:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "单个信息",
+            "router": null,
+            "perms": "goods:searchKeyword:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "列表查询",
+            "router": null,
+            "perms": "goods:searchKeyword:list",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "分页查询",
+            "router": null,
+            "perms": "goods:searchKeyword:page",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "新增",
+            "router": null,
+            "perms": "goods:searchKeyword:add",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "订单管理",
+    "router": null,
+    "perms": null,
+    "type": 0,
+    "icon": "icon-log",
+    "orderNum": 2,
+    "viewPath": null,
+    "keepAlive": true,
+    "isShow": true,
+    "childMenus": [
+      {
+        "name": "订单列表",
+        "router": "/order/info",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-menu",
+        "orderNum": 1,
+        "viewPath": "modules/order/views/info.vue",
+        "keepAlive": true,
+        "isShow": true,
+        "childMenus": [
+          {
+            "name": "退款处理",
+            "router": null,
+            "perms": "order:info:refundHandle",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "物流信息",
+            "router": null,
+            "perms": "order:info:logistics",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "发货",
+            "router": null,
+            "perms": "order:info:deliver",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "删除",
+            "router": null,
+            "perms": "order:info:delete",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "修改",
+            "router": null,
+            "perms": "order:info:update,order:info:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "单个信息",
+            "router": null,
+            "perms": "order:info:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "列表查询",
+            "router": null,
+            "perms": "order:info:list",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "分页查询",
+            "router": null,
+            "perms": "order:info:page",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          }
+        ]
+      },
+      {
+        "name": "退款列表",
+        "router": "/order/refund",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-amount",
+        "orderNum": 2,
+        "viewPath": "modules/order/views/refund.vue",
+        "keepAlive": true,
+        "isShow": true,
+        "childMenus": []
+      }
+    ]
+  },
+  {
+    "name": "活动管理",
+    "router": null,
+    "perms": null,
+    "type": 0,
+    "icon": "icon-activity",
+    "orderNum": 3,
+    "viewPath": null,
+    "keepAlive": true,
+    "isShow": true,
+    "childMenus": [
+      {
+        "name": "优惠券列表",
+        "router": "/market/coupon/info",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-activity",
+        "orderNum": 1,
+        "viewPath": "modules/market/views/coupon/info.vue",
+        "keepAlive": true,
+        "isShow": true,
+        "childMenus": [
+          {
+            "name": "删除",
+            "router": null,
+            "perms": "market:coupon:info:delete",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "修改",
+            "router": null,
+            "perms": "market:coupon:info:update,market:coupon:info:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "单个信息",
+            "router": null,
+            "perms": "market:coupon:info:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "列表查询",
+            "router": null,
+            "perms": "market:coupon:info:list",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "分页查询",
+            "router": null,
+            "perms": "market:coupon:info:page",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "新增",
+            "router": null,
+            "perms": "market:coupon:info:add",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          }
+        ]
+      },
+      {
+        "name": "领取列表",
+        "router": "/market/coupon/user",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-menu",
+        "orderNum": 2,
+        "viewPath": "modules/market/views/coupon/user.vue",
+        "keepAlive": false,
+        "isShow": false,
+        "childMenus": [
+          {
+            "name": "删除",
+            "router": null,
+            "perms": "market:coupon:user:delete",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "修改",
+            "router": null,
+            "perms": "market:coupon:user:update,market:coupon:user:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "单个信息",
+            "router": null,
+            "perms": "market:coupon:user:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "列表查询",
+            "router": null,
+            "perms": "market:coupon:user:list",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "分页查询",
+            "router": null,
+            "perms": "market:coupon:user:page",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "新增",
+            "router": null,
+            "perms": "market:coupon:user:add",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "信息管理",
+    "router": null,
+    "perms": null,
+    "type": 0,
+    "icon": "icon-dict",
+    "orderNum": 5,
+    "viewPath": null,
+    "keepAlive": true,
+    "isShow": true,
+    "childMenus": [
+      {
+        "name": "轮播图列表",
+        "router": "/info/banner",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-pic",
+        "orderNum": 1,
+        "viewPath": "modules/info/views/banner.vue",
+        "keepAlive": true,
+        "isShow": true,
+        "childMenus": [
+          {
+            "name": "删除",
+            "router": null,
+            "perms": "info:banner:delete",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "修改",
+            "router": null,
+            "perms": "info:banner:update,info:banner:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "单个信息",
+            "router": null,
+            "perms": "info:banner:info",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "列表查询",
+            "router": null,
+            "perms": "info:banner:list",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "分页查询",
+            "router": null,
+            "perms": "info:banner:page",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          },
+          {
+            "name": "新增",
+            "router": null,
+            "perms": "info:banner:add",
+            "type": 2,
+            "icon": null,
+            "orderNum": 0,
+            "viewPath": null,
+            "keepAlive": true,
+            "isShow": true,
+            "childMenus": []
+          }
+        ]
+      }
+    ]
+  }
+]

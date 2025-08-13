@@ -1,0 +1,268 @@
+{
+    "pages": [
+        {
+            "path": "pages/index/home",
+            "style": {
+                "enablePullDownRefresh": true
+            }
+        },
+        {
+            "path": "pages/index/category",
+            "style": {
+                "disableScroll": true,
+                "navigationBarTitleText": "分类"
+            }
+        },
+        {
+            "path": "pages/index/shopping-cart",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "购物车"
+            }
+        },
+        {
+            "path": "pages/index/my",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "我的",
+                "navigationBarTextStyle": "white"
+            }
+        }
+    ],
+    "subPackages": [
+        {
+            "root": "uni_modules/cool-app/pages",
+            "pages": [
+                {
+                    "path": "version/demo",
+                    "style": {
+                        "navigationBarTitleText": "版本升级"
+                    }
+                },
+                {
+                    "path": "complain/detail",
+                    "style": {
+                        "navigationBarTitleText": "投诉详情"
+                    }
+                },
+                {
+                    "path": "complain/list",
+                    "style": {
+                        "navigationBarTitleText": "投诉列表"
+                    }
+                },
+                {
+                    "path": "complain/submit",
+                    "style": {
+                        "navigationStyle": "custom"
+                    }
+                },
+                {
+                    "path": "feedback/detail",
+                    "style": {
+                        "navigationBarTitleText": "反馈详情"
+                    }
+                },
+                {
+                    "path": "feedback/list",
+                    "style": {
+                        "navigationBarTitleText": "反馈列表"
+                    }
+                },
+                {
+                    "path": "feedback/submit",
+                    "style": {
+                        "navigationStyle": "custom"
+                    }
+                }
+            ],
+            "isTemp": true
+        },
+        {
+            "root": "uni_modules/cool-cs/pages",
+            "pages": [
+                {
+                    "path": "chat",
+                    "style": {
+                        "navigationBarTitleText": "客服聊天"
+                    }
+                }
+            ],
+            "isTemp": true
+        },
+        {
+            "root": "pages/market",
+            "pages": [
+                {
+                    "path": "coupon",
+                    "style": {
+                        "navigationBarTitleText": "我的优惠券",
+                        "enablePullDownRefresh": true
+                    }
+                }
+            ]
+        },
+        {
+            "root": "pages/order",
+            "pages": [
+                {
+                    "path": "refund",
+                    "style": {
+                        "navigationBarTitleText": "退款申请"
+                    }
+                },
+                {
+                    "path": "comment",
+                    "style": {
+                        "navigationBarTitleText": "商品评价"
+                    }
+                },
+                {
+                    "path": "logistics",
+                    "style": {
+                        "navigationBarTitleText": "物流详情",
+                        "enablePullDownRefresh": true
+                    }
+                },
+                {
+                    "path": "list",
+                    "style": {
+                        "navigationBarTitleText": "订单列表",
+                        "enablePullDownRefresh": true
+                    }
+                },
+                {
+                    "path": "detail",
+                    "style": {
+                        "navigationBarTitleText": "订单详情",
+                        "enablePullDownRefresh": true,
+                        "navigationStyle": "custom"
+                    }
+                },
+                {
+                    "path": "submit",
+                    "style": {
+                        "navigationBarTitleText": "订单提交"
+                    }
+                }
+            ]
+        },
+        {
+            "root": "pages/goods",
+            "pages": [
+                {
+                    "path": "search",
+                    "style": {
+                        "navigationStyle": "custom"
+                    }
+                },
+                {
+                    "path": "list",
+                    "style": {
+                        "navigationStyle": "custom",
+                        "enablePullDownRefresh": true
+                    }
+                },
+                {
+                    "path": "detail",
+                    "style": {
+                        "navigationStyle": "custom",
+                        "enablePullDownRefresh": true
+                    }
+                },
+                {
+                    "path": "comment",
+                    "style": {
+                        "navigationBarTitleText": "商品评价"
+                    }
+                }
+            ]
+        },
+        {
+            "root": "pages/user",
+            "pages": [
+                {
+                    "path": "address-list",
+                    "style": {
+                        "navigationBarTitleText": "收货地址",
+                        "enablePullDownRefresh": true
+                    }
+                },
+                {
+                    "path": "address-edit",
+                    "style": {
+                        "navigationBarTitleText": ""
+                    }
+                },
+                {
+                    "path": "doc",
+                    "style": {
+                        "navigationBarTitleText": ""
+                    }
+                },
+                {
+                    "path": "set",
+                    "style": {
+                        "navigationBarTitleText": "设置"
+                    }
+                },
+                {
+                    "path": "edit",
+                    "style": {
+                        "navigationBarTitleText": "编辑"
+                    }
+                },
+                {
+                    "path": "login",
+                    "style": {
+                        "navigationStyle": "custom"
+                    }
+                },
+                {
+                    "path": "captcha",
+                    "style": {
+                        "navigationStyle": "custom"
+                    }
+                },
+                {
+                    "path": "about",
+                    "style": {
+                        "navigationBarTitleText": ""
+                    }
+                }
+            ]
+        }
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "携带空间",
+        "navigationBarBackgroundColor": "#ffffff",
+        "backgroundColor": "#f6f7fa"
+    },
+    "tabBar": {
+        "backgroundColor": "#ffffff",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/home",
+                "iconPath": "static/icon/tabbar/home.png",
+                "selectedIconPath": "static/icon/tabbar/home2.png"
+            },
+            {
+                "pagePath": "pages/index/category",
+                "iconPath": "static/icon/tabbar/category.png",
+                "selectedIconPath": "static/icon/tabbar/category2.png"
+            },
+            {
+                "pagePath": "pages/index/shopping-cart",
+                "iconPath": "static/icon/tabbar/shopping-cart.png",
+                "selectedIconPath": "static/icon/tabbar/shopping-cart2.png"
+            },
+            {
+                "pagePath": "pages/index/my",
+                "iconPath": "static/icon/tabbar/my.png",
+                "selectedIconPath": "static/icon/tabbar/my2.png"
+            }
+        ]
+    }
+}

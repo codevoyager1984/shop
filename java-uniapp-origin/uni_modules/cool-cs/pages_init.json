@@ -1,0 +1,15 @@
+{
+	"subPackages": [
+		{
+			"root": "uni_modules/cool-cs/pages",
+			"pages": [
+				{
+					"path": "chat",
+					"style": {
+						"navigationBarTitleText": "客服聊天"
+					}
+				}
+			]
+		}
+	]
+}

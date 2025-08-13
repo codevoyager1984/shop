@@ -1,0 +1,51 @@
+{
+	"subPackages": [
+		{
+			"root": "uni_modules/cool-app/pages",
+			"pages": [
+				{
+					"path": "version/demo",
+					"style": {
+						"navigationBarTitleText": "版本升级"
+					}
+				},
+				{
+					"path": "complain/detail",
+					"style": {
+						"navigationBarTitleText": "投诉详情"
+					}
+				},
+				{
+					"path": "complain/list",
+					"style": {
+						"navigationBarTitleText": "投诉列表"
+					}
+				},
+				{
+					"path": "complain/submit",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "feedback/detail",
+					"style": {
+						"navigationBarTitleText": "反馈详情"
+					}
+				},
+				{
+					"path": "feedback/list",
+					"style": {
+						"navigationBarTitleText": "反馈列表"
+					}
+				},
+				{
+					"path": "feedback/submit",
+					"style": {
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		}
+	]
+}

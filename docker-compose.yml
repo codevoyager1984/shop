@@ -1,0 +1,124 @@
+# Shop Origin 一键启动配置
+# 包含前端管理系统、后端API、数据库和缓存服务
+
+services:
+  # MySQL 数据库
+  mysql:
+    image: mysql:8.0
+    container_name: shop-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "123456"
+      MYSQL_DATABASE: "cool"
+      MYSQL_USER: "cool"
+      MYSQL_PASSWORD: "123456"
+      TZ: Asia/Shanghai
+    networks:
+      - shop-network
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./shop-api-origin/src/main/resources/sql:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password
+
+  # Redis 缓存
+  redis:
+    image: redis:7-alpine
+    container_name: shop-redis
+    restart: unless-stopped
+    environment:
+      TZ: Asia/Shanghai
+    networks:
+      - shop-network
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes
+
+  # 后端 API 服务
+  shop-api:
+    build:
+      context: ./shop-api-origin
+      dockerfile: Dockerfile
+    container_name: shop-api
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/cool?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: cool
+      SPRING_DATASOURCE_PASSWORD: 123456
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_DATA_REDIS_PORT: 6379
+      COOL_FILE_LOCAL_BASE_URL: http://localhost:8001/upload
+      # 通过环境变量启用自动建表和数据初始化
+      AUTO_TABLE_ENABLE: true
+      AUTO_TABLE_AUTODROPINDEX: true
+      AUTO_TABLE_SUPERINSERTPOSITION: before
+      AUTO_TABLE_MODEL_PACKAGE: com.cool.**.entity.*
+      COOL_INITDATA: true
+    networks:
+      - shop-network
+    ports:
+      - "8001:8001"
+    volumes:
+      - api-uploads:/app/assets/public
+    depends_on:
+      - mysql
+      - redis
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # 前端管理系统
+  shop-admin:
+    build:
+      context: ./shop-admin-origin
+      dockerfile: Dockerfile
+    container_name: shop-admin
+    networks:
+      - shop-network
+    ports:
+      - "80:80"
+    depends_on:
+      - shop-api
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # 数据库管理工具 (可选)
+  adminer:
+    image: adminer:latest
+    container_name: shop-adminer
+    networks:
+      - shop-network
+    ports:
+      - "8080:8080"
+    environment:
+      ADMINER_DEFAULT_SERVER: mysql
+      ADMINER_DESIGN: pepa-linha
+    depends_on:
+      - mysql
+    restart: unless-stopped
+
+networks:
+  shop-network:
+    driver: bridge
+    name: shop-network
+
+volumes:
+  mysql-data:
+    driver: local
+    name: shop-mysql-data
+  redis-data:
+    driver: local
+    name: shop-redis-data
+  api-uploads:
+    driver: local
+    name: shop-api-uploads

@@ -1,0 +1,134 @@
+@font-face {
+	font-family: "shop-iconfont"; /* Project id 1805670 */
+	src:
+		url("font.woff2") format("woff2"),
+		url("font.woff") format("woff"),
+		url("font.ttf") format("truetype");
+}
+
+[class*="shop-icon-"] {
+	font-family: "shop-iconfont";
+	font-size: inherit;
+	font-style: normal;
+	line-height: 1;
+}
+
+.shop-icon-list:before {
+	content: "\ec87";
+}
+
+.shop-icon-list2:before {
+	content: "\ec88";
+}
+
+.shop-icon-order-close:before {
+	content: "\ec86";
+}
+
+.shop-icon-order-success:before {
+	content: "\ec85";
+}
+
+.shop-icon-order-comment:before {
+	content: "\ec7b";
+}
+
+.shop-icon-order-received:before {
+	content: "\ec7d";
+}
+
+.shop-icon-order-paid:before {
+	content: "\ec7e";
+}
+
+.shop-icon-order-not-shipped:before {
+	content: "\ec7f";
+}
+
+.shop-icon-order-refund:before {
+	content: "\ec80";
+}
+
+.shop-icon-order-received2:before {
+	content: "\ec81";
+}
+
+.shop-icon-zoom:before {
+	content: "\ec82";
+}
+
+.shop-icon-sku:before {
+	content: "\e762";
+}
+
+.shop-icon-set:before {
+	content: "\e761";
+}
+
+.shop-icon-home:before {
+	content: "\ec7a";
+}
+
+.shop-icon-shopping-cart:before {
+	content: "\ec79";
+}
+
+.shop-icon-more:before {
+	content: "\e657";
+}
+
+.shop-icon-q-order:before {
+	content: "\e697";
+}
+
+.shop-icon-q-pay:before {
+	content: "\e698";
+}
+
+.shop-icon-q-refund:before {
+	content: "\e699";
+}
+
+.shop-icon-q-logistics:before {
+	content: "\e69a";
+}
+
+.shop-icon-setting:before {
+	content: "\e68b";
+}
+
+.shop-icon-coupon:before {
+	content: "\e68c";
+}
+
+.shop-icon-order:before {
+	content: "\e68d";
+}
+
+.shop-icon-location:before {
+	content: "\e68e";
+}
+
+.shop-icon-filter:before {
+	content: "\e68f";
+}
+
+.shop-icon-message:before {
+	content: "\e691";
+}
+
+.shop-icon-delete:before {
+	content: "\e693";
+}
+
+.shop-icon-sort:before {
+	content: "\e694";
+}
+
+.shop-icon-search:before {
+	content: "\e695";
+}
+
+.shop-icon-custom:before {
+	content: "\e696";
+}
