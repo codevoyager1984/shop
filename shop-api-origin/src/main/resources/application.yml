@@ -152,7 +152,7 @@ cool:
     queue-capacity-multiplier: 3
   sysParam:
     # 允许端上访问的系统配置
-    allowKeys: privacyPolicy,userAgreement
+    allowKeys: privacyPolicy,userAgreement,alipayNotifyUrl,alipayReturnUrl
 # AutoTable配置，根据实体类自动生成表
 auto-table:
   show-banner: false
@@ -162,3 +162,12 @@ leaf:
   segment:
     # 默认禁用
     enable: true
+
+# 支付宝配置
+alipay:
+  app-id: 你的支付宝应用ID  # 替换为实际的支付宝应用ID
+  merchant-private-key: 你的商户私钥  # 替换为实际的商户私钥
+  alipay-public-key: 支付宝公钥  # 替换为实际的支付宝公钥
+  sandbox: true  # 是否沙箱环境，生产环境改为false
+  notify-url: http://your-domain.com/app/order/pay/alipayNotify  # 替换为实际的回调地址
+  return-url: http://your-domain.com/pay/success  # 替换为实际的返回地址
