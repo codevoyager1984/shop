@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://rm-2zesdr3vl31l3m58zho.mysql.rds.aliyuncs.com:3306/cool_dev?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8
-    username: job_daily_dev
-    password: Aadev123456!
+    url: jdbc:mysql://127.0.0.1:3306/cool?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8
+    username: cool
+    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 #    url: jdbc:postgresql://127.0.0.1:5432/cool
